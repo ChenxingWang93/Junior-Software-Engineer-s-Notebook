@@ -1,1 +1,1 @@
-# Junior-Software-Engineer-s-Notebook
+# Junior-Software-Engineer-s-Notebook 📖
