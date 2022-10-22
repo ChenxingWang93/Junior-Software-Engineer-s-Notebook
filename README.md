@@ -126,5 +126,7 @@ in short, a Git _repository_: it is the data `objects` and `references`.
   
 ## 📍 A diagram for Git
 
-# Frequently Used Commands
+# Frequently Used Commands //常用命令
+|Command 命令 |Objective 目的 |Example 例子 |
+|------------|---------------|------------|
 
