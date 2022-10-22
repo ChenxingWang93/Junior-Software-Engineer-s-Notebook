@@ -52,6 +52,18 @@
 ### - master and sub conflicts ❌  
   
 > ```
->   
+> o <-- o <-- o <-- o <---- o
+>             ^            /
+>              \          v
+>               --- o <-- o
 > ```
+
+## 📍 Data model 
+### The following mimics the data model in Git in pseudocode.
+### File: it's a bunch of bytes
+> ```
+> type blob = array<byte>
+> ```
+
+### 
 
