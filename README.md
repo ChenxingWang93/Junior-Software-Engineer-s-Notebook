@@ -17,7 +17,7 @@
 > +- baz.txt (blob, contents = "git is wonderful")
 > ```
 
-## 📍 modeling history: relating snapshots
+## 📍 Modeling history: relating snapshots
 ### a history is a directed acyclic graph(DAG) of snapshots
 ### each snapshot in Git refers to a set of "parents", the snapshot that preceded it.
 > ```
@@ -39,5 +39,19 @@
 >                          ↓
 >                       bug_fix
 > ```
+  
+## 📍 Fast-forward and three-way merge 
+### Fast-forward: the commit all points to a same parent commit
+> ```
+> o <-- o <-- o <-- o  
+> ```
 
+### Three-way merge:
+### - master and sub no conflicts ✔️, different file
+### - master and sub no conflicts ✔️, different modification in the same file
+### - master and sub conflicts ❌  
+  
+> ```
+>   
+> ```
 
