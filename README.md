@@ -60,10 +60,47 @@
 
 ## 📍 Data model 
 ### The following mimics the data model in Git in pseudocode.
-### File: it's a bunch of bytes
+### **File**: it's a bunch of bytes
 > ```
 > type blob = array<byte>
 > ```
 
-### 
+### **Directory**: It contains named files and directories //目录
+> ```
+> type tree = map<string, tree | blob>  
+> ```
+
+### **Commit**: It has parents, metadata, and the top-level tree //
+> ```
+> type commit = struct
+> {
+>     parents: array<commit>
+>     author: string
+>     message: string
+>     snapshot: tree  
+> }  
+> ```
+  
+  
+### **Object**: It could be a blob, tree, or commit. //对象
+> ```
+> type object = blob | tree | commit
+> ```
+  
+### **Data Storage**: In Git data store, all objects are content-addressed by their SHA-1 hash.
+> ```
+> objects = map<string, object>
+> 
+> def store(object):
+>     id = sha1(object)
+>     objects[id] = object
+>  
+> def load(id):
+>     return objects[id]
+> ```
+  
+### **References**: They are pointers to commits, Convert _SHA-1 hash_ to _human-readable names._
+> ```
+>   
+> ```  
 
