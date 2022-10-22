@@ -101,6 +101,20 @@
   
 ### **References**: They are pointers to commits, Convert _SHA-1 hash_ to _human-readable names._
 > ```
->   
+> references = map<string, string>
+> def update_reference(name, id):
+>     reference[name] = id
+>
+> def read_reference(name):
+>     return references[name]
+>
+> def load_reference(name_or_id):
+>     if name_or_id in references:
+>         return load (references[name_or_id])
+>     else:
+>         return load(name_or_id)
 > ```  
 
+e.g.
+
+HEAD
