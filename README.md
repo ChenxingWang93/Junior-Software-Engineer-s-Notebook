@@ -137,6 +137,17 @@ in short, a Git _repository_: it is the data `objects` and `references`.
 |`git branch <branch_name>`|create a new branch 创建一个心分支|`git branch dev`|
 |`git branch -d <the_local_branch>`|Delete local branch 删除本地分支|`git branch -d PointDebug`|
 |`git cat-file -p <SHA-1 hash>`|Visualize data by SHA-1 hash 可视化数据|
-|`git checkout <file>`|
+|`git checkout <file>`|remove the unstaged changes and back to current stage 删除未暂存的更改并返回到当前阶段｜
+|`git checkout <branch>`|change HEAD to such branch|`git checkout dev`|
+|`git checkout <commit_guid>`|change HEAD to such commit|
+|`git checkout -b <branch>`|create a new branch and checkout to it 创建一个新分支并checkout 它 `git checkout -b dev`|
+|`git clean -f -d`|clean all the untracked files and folders 清理所有未跟踪的📃和📁｜
+|`git clone <url>`|clone the repo from url 从url clone repo｜
+|`git clone --shallow`|clone the repo without any history clone没有任何历史记录的存储库|
+|`git clone --recursive <url>`｜clone the repo recursively 以递归方式clone存储库｜
+|`git commit`|`Archive and confirm` the changes to the directory 存档并确认对目录的修改|
+|`git commit -m"<message>"`|same with 👆,but with a short message|`git commit -m"UpdateREADME.md"`|
+|`git commit -a-m"<message>"`|`-a` stands for add; combine add and commit 合并添加和提交|`git commit -a -m"Update README.md"`|
+|
 
 
