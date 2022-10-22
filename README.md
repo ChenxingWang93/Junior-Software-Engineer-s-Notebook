@@ -129,4 +129,14 @@ in short, a Git _repository_: it is the data `objects` and `references`.
 # Frequently Used Commands //常用命令
 |Command 命令 |Objective 目的 |Example 例子 |
 |------------|---------------|------------|
+|`git add <file_name>`|Add file to staging area 添加📃到暂存区|`git add README.md`|
+|`git add .`|Add any unstaged files to staging area 将任何未暂存区的文件添加到暂存区|
+|`git add -p <file>`|Interactively choose hunks of patch 交互式选择大块补丁|
+|`git blame`|see each commit with authors 查看每个提交与作者|
+|`git branch`|see all the branches 查看所有分支|
+|`git branch <branch_name>`|create a new branch 创建一个心分支|`git branch dev`|
+|`git branch -d <the_local_branch>`|Delete local branch 删除本地分支|`git branch -d PointDebug`|
+|`git cat-file -p <SHA-1 hash>`|Visualize data by SHA-1 hash 可视化数据|
+|`git checkout <file>`|
+
 
