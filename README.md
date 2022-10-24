@@ -155,6 +155,16 @@ in short, a Git _repository_: it is the data `objects` and `references`.
 |`git diff <file>`|see diff of file with HEAD|
 |`git diff <guid> <file>`|see diff of file between current HEAD and guid|
 |`git diff <prev_guid> <now_guid> <file>`|see diff of file between `previous` and `now`|
+|`git fetch <remote>`|fetch the commits from remote to local 从远程取得commits到本地|
+|`git help <command>`|help menu of such command|`git help commit`|
+|`git init`|Initialize a git repo 初始化一个git repo|
+|`git log`|the log of git history git历史日志|
+|`git log --stat`|the log of git history statistically git历史日志|
+|`git log --all --graph --decorate`|nice diagram of git log git日志图解|
+|`git merge <branchX>`|merge `branchX` into current branch|`git merge origin/master`|
+|`git mv <old_name> <new_name>`|rename specific file(this has to be commited)|
+|`git push`|push commits to remote(already configured remote)|
+|`git push <remote> <branch>:<branch>`|push commits to remote|git push origin main:main|
 |
 ### tbd
 ### tbd
