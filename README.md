@@ -165,6 +165,7 @@ in short, a Git _repository_: it is the data `objects` and `references`.
 |`git mv <old_name> <new_name>`|rename specific file(this has to be commited)|
 |`git push`|push commits to remote(already configured remote)|
 |`git push <remote> <branch>:<branch>`|push commits to remote|git push origin main:main|
+|git push <remote> --delete <the_remote_branch>|Delete remote branch 删除远程分支|git push origin --delete PointDebug|
 |
 ### tbd
 ### tbd
