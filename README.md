@@ -165,8 +165,16 @@ in short, a Git _repository_: it is the data `objects` and `references`.
 |`git mv <old_name> <new_name>`|rename specific file(this has to be commited)|
 |`git push`|push commits to remote(already configured remote)|
 |`git push <remote> <branch>:<branch>`|push commits to remote|git push origin main:main|
-|git push <remote> --delete <the_remote_branch>|Delete remote branch 删除远程分支|git push origin --delete PointDebug|
-|
+|`git push <remote> --delete <the_remote_branch>`|Delete remote branch 删除远程分支|git push origin --delete PointDebug|
+|`git pull`|`git pull`={`git fetch; git merge<remote>/<branch>`}|
+|`git rm --cached <file>`|To stop tracking files which have already been tracked|`git rm --cached main.3dm.bak`|
+|`git reset`|remove all the staged changes, green=>red|
+|git reset --hard <commitGuid>|Destroy any local modification and reset to such commit|`git reset --hard 0d1d7fc32`|
+|`git reset HEAD --hard`|Reset the modified files back to the HEAD|
+|`git revert <commit_guid>`|Reverting undoes a commit by creating a new commit|
+|`git show <guid>`|check specific commit by guid|`git show 721d6bd`|
+|`git stash`|hid current untracked changes|
+|`git stash pop`|pop out the hidden untracked changes|
 ### tbd
 ### tbd
 ### tbd
