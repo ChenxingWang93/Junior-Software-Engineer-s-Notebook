@@ -149,7 +149,13 @@ in short, a Git _repository_: it is the data `objects` and `references`.
 |`git commit -m"<message>"`|same with 👆,but with a short message|`git commit -m"UpdateREADME.md"`|
 |`git commit -a-m"<message>"`|`-a` stands for add; combine add and commit 合并添加和提交|`git commit -a -m"Update README.md"`|
 |`git commit --amend`|append current commit with previous commit 追加当前提交到上一个提交|
-|git config -l
+|`git config -l`| `-l` stands for listing the details of config, e.g. user name 列出config的细节|
+|`git diff`|
+|`git diff --staged`|compare the un-commit changes with HEAD|
+|`git diff <file>`|see diff of file with HEAD|
+|`git diff <guid> <file>`|see diff of file between current HEAD and guid|
+|`git diff <prev_guid> <now_guid> <file>`|see diff of file between `previous` and `now`|
+|
 ### tbd
 ### tbd
 ### tbd
