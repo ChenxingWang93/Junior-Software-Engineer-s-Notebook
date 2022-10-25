@@ -244,11 +244,8 @@ in short, a Git _repository_: it is the data `objects` and `references`.
 3. When the computer request credential, just close it until it appears on the command line for the following info //当💻请求凭据，关闭直到在CL出现下述信息
 -  i. `user_name`: the name of your Github account
 -  ii. `password`: paste your token here
-
   
-  
-### tbd
-### tbd
-### tbd
 
-
+# Shell 🐚
+>
+> 
