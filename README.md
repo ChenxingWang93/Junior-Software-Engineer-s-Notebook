@@ -247,5 +247,5 @@ in short, a Git _repository_: it is the data `objects` and `references`.
   
 
 # Shell 🐚
->
+> in short, shell
 > 
