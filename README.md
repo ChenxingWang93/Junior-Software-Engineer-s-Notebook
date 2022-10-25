@@ -175,8 +175,11 @@ in short, a Git _repository_: it is the data `objects` and `references`.
 |`git show <guid>`|check specific commit by guid|`git show 721d6bd`|
 |`git stash`|hid current untracked changes|
 |`git stash pop`|pop out the hidden untracked changes|
-### tbd
-### tbd
+
+# Good 👍 resources of Git
+.gitignore
+
+
 ### tbd
 ### tbd
 ### tbd
