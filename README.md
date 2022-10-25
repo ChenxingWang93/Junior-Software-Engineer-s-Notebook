@@ -206,7 +206,45 @@ in short, a Git _repository_: it is the data `objects` and `references`.
   
 ### 📍 Setup for recursive clone? //递归克隆
 #### You want to combine several dependencies into one project when you work on a macro project //合依赖到一个大型project
-1. create a .gitmodules
+1. create a `.gitmodules` in the root of your `git` folder.
+2. define **what** `git` repo will be in which **location** of your main folder
+> ```
+> [submodule "<name_of_this_repo"]
+>         path = <location_of_this_submodule>
+>         url = <url_of_this_repo>
+> //e.g.
+> [submodule "deps/polyscope"]
+>         path = deps/polyscope
+>         url = https://github.com/nzfeng/polyscope.git
+> [submodule "deps/googletest"]
+>         path = deps/googletest
+>         url = https://github.com/google/googletest.git
+> ```
+
+### 📍 Git submodules
+> ```
+> git submodule add --depth 1 git@gitee.com:shanghai-dajie-robot/pocket_raichu.git submodules/pocket_raichu
+> git config -f .gitmodules submodule.pocket_raichu.shallow true  
+> ```
+
+> ```
+> git config -f .gitmodules submodule.submodules/pocket_raichu.shallow false  
+> ```
+  
+#### git submodule foreach git pull origin master // 每个git拉取原始master
+> ```
+> git clone <repo_url>
+> git submodule init
+> git submodule update --depth 10  
+> ```
+  
+### 📍 Setup a Github Access Token
+1. Go to the Github account - Developer Setting - Generate Token
+2. Git clone an arbitrary repo from your page
+3. When the computer request credential, just close it until it appears on the command line for the following info //当💻请求凭据，关闭直到在CL出现下述信息
+-  i. `user_name`: the name of your Github account
+-  ii. `password`: paste your token here
+
   
   
 ### tbd
