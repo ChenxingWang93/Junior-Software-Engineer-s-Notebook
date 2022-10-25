@@ -251,3 +251,33 @@ in short, a Git _repository_: it is the data `objects` and `references`.
 > 
 
 ## 0.Basic Concept //基本概念
+### 📍environment variable(PATH)
+All the commands you run in the shell has already been added to the `environment variable` in your PC. In Windows, you can search `edit the system environtment variable` => `environtment variable..` =>Edit the `PATH`.
+  
+### 📍`/` anf `\`
+### A path on the shell is a delimited list of directories;
+### on Linux and macOS
+> path separated by `/`
+> `/` means the "root"
+  
+### on Windows:
+> path separated by `\`
+> > `C:\` means the "root"
+
+### 📍 absolute path and relative path //绝对路径与相对路径
+> a.Absolute path is with full path (literally). e.g.
+> > In windows,
+> ```
+> C:\Users\Chenxing\AppData\Local\Temp
+> ```
+
+> > In Linux and macOS:
+> > > path starts with `/` is _absolute_
+> ```
+> /home/tutorial   
+> ```
+
+> b. Relative path takes the _advantage_ of _environtment variable_ to form the absolute path. e.g.
+> ```
+> %USERPROFILE%\AppData\Local\Temp
+> ```
