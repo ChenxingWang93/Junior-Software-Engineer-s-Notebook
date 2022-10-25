@@ -169,17 +169,47 @@ in short, a Git _repository_: it is the data `objects` and `references`.
 |`git pull`|`git pull`={`git fetch; git merge<remote>/<branch>`}|
 |`git rm --cached <file>`|To stop tracking files which have already been tracked|`git rm --cached main.3dm.bak`|
 |`git reset`|remove all the staged changes, green=>red|
-|git reset --hard <commitGuid>|Destroy any local modification and reset to such commit|`git reset --hard 0d1d7fc32`|
+|`git reset --hard <commitGuid>`|Destroy any local modification and reset to such commit|`git reset --hard 0d1d7fc32`|
 |`git reset HEAD --hard`|Reset the modified files back to the HEAD|
 |`git revert <commit_guid>`|Reverting undoes a commit by creating a new commit|
 |`git show <guid>`|check specific commit by guid|`git show 721d6bd`|
 |`git stash`|hid current untracked changes|
 |`git stash pop`|pop out the hidden untracked changes|
 
-# Good 👍 resources of Git
-.gitignore
+# 2. Good 👍 resources of Git
+#### `.gitignore` template
+> https://github.com/github/gitignore
 
+#### Software for Git //Git 软件
+> `SourceTree` is a free software managing Git while it provides GUI to interact with Git. Highly recommend!
+> https://www.sourcetreeapp.com/
 
+#### Book for Git //Git
+> https://git-scm.com/book/en/v2
+
+# 3. Some Regular Procedure 一些常规流程
+### 📍 How to solve conflicts? //如何解决冲突
+#### Suppose you are on `master`, and you want to merge `new_feature` branch, the conflict is on `main.cpp`. then you can do:
+> ```
+> git merge new_feature  
+> ```
+  
+#### You will see the feedback from the prompt saying there are conflicts. You open the `main.cpp` which was decorated with some notation from `git`. Here I use VS Code
+> ```
+> code main.cpp  
+> ```
+
+#### You manually fix the conflicts, Then you should **add it to the staging area!** 
+> ```
+> git merge --continue 
+> ```
+  
+### 📍 Setup for recursive clone? //递归克隆
+#### You want to combine several dependencies into one project when you work on a macro project //合依赖到一个大型project
+
+  
+  
+  
 ### tbd
 ### tbd
 ### tbd
