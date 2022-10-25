@@ -206,8 +206,7 @@ in short, a Git _repository_: it is the data `objects` and `references`.
   
 ### 📍 Setup for recursive clone? //递归克隆
 #### You want to combine several dependencies into one project when you work on a macro project //合依赖到一个大型project
-
-  
+1. create a .gitmodules
   
   
 ### tbd
