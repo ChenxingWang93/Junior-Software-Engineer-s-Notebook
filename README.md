@@ -249,3 +249,5 @@ in short, a Git _repository_: it is the data `objects` and `references`.
 # Shell 🐚
 > in short, **shell** is a type of user interface. It is either command-line interface (CLI) or **graphical user interface(GUI)** this section will mainly on_(CLI)_ especially on Bourne Again SHell, or "bash" for short.
 > 
+
+## 0.Basic Concept //基本概念
