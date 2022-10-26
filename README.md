@@ -296,4 +296,36 @@ All the commands you run in the shell has already been added to the `environment
 > ```
 > ls -l  
 > ```
-### 
+### The `-l` flag asks the ls command to list the files in _a long listing format_
+### _example:_
+> ```
+> git log --stat  
+> ```
+### The `--stat` option indicates the `git` command to show the _statistics_ from `git log`
+
+### 📍 ` `, `""`, `\` **use in file name and folder name**
+### The space ` ` is used to seperate the arguments in the command line. e.g.
+> ```
+> mkdir my photo  
+> ```
+
+### This will create 2 folders which are "my" and "photo". If you want to create a folder with "my photo".
+### You either use `""` to concatenate or use `\` to escape the space.
+> ```
+> mkdir "my photo"
+> mkdir my\ photo
+> ```
+
+### 📍 `' '` and `" "`
+### Things inside single quote `' '` are literal string. Meaning what is inside.
+### Things inside double quote `" "` are strings. They can be substituted.
+
+### 📍 `<`, `>`, `>>` in data stream
+### `<` take the data stream out...
+### `>` take the data stream in...
+### `>>` take the data stream _append_ in...
+### e.g.
+> ```
+> cat <hello.txt >README.txt  
+> ```
+
