@@ -282,4 +282,18 @@ All the commands you run in the shell has already been added to the `environment
 > %USERPROFILE%\AppData\Local\Temp
 > ```
 
-### 📍 .
+### 📍 `.` , `..` , `~` , `-` used in path
+### It is a must to know these 3 symbols for they appear a lot.
+### `.` means current directory, e.g. `cd ./tutorial` change dir to the tutorial folder which under **current dir**
+### `..` means the parent directory, e.g. `cd ..` change dir to its parent dir. 
+### `~` means the home directory. e.g. `ssh-add ~/.ssh/id_rsa` add the ssh key in the "HOME folder/.ssh/"
+### `-` means the previous directory in the prompt
+
+### 📍 `-`, `--` used in command
+### `-` indicates a flag which **modify** their behavior
+### `--` indicates an options
+### _example:_
+> ```
+> ls -l  
+> ```
+### 
