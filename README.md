@@ -468,5 +468,18 @@ e.g. Suppose you have `main.py main1.py main2.py main3.py`
 
 > 5. Find files by sizes
 > ```
->   
+> $ find . -size +500k -size -10M -name '*.tar.gz' # Find all zip files with size in range 500k to 10M
 > ```
+
+### 📍What is shebang?
+> Different names:
+### It is also called `hashbang, pound-bang, or hash-pling.`
+### Always starts with `#!` at the beginning of a file.
+> Objective:
+### Increase the portability of the script. It will make use of the `PATH` environtment and resolve to wherever the command lives in the system.
+
+> Example:
+### `#!/usr/bin/env python3`, Execute with a Python interpreter, using the `env` program search path to find it.
+
+
+### 📍
