@@ -375,13 +375,20 @@ e.g.
 
 ### For `Autodesk/` folder, `drwxr-xr-x`
 > `0=d`, this is a directory✔️, file❌
+  
 > `123=rwx`, _owner_ can **read**✔️, **write**✔️ and **execute**✔️.
+  
 > `456=r-x`, _owner group_ can **read**✔️, **write**❌ and **execute**✔️.
+  
 > `789=r-x`, _other users_ can **read**, **write**❌ and **execute**✔️.
+  
 For `desktop.ini` file, `-rwxr-xr-x`
 > `0=-`, this is a directory❌, file✔️
+  
 > `123=rw-`, _owner_ can **read**✔️, **write**✔️ and **execute**❌.
+  
 > `456=r--`, _owner group_ can **read**✔️, **write**❌ and **execute**❌.
+  
 > `789=r--`, other users can **read**✔️, **write**❌ and **execute**❌.
   
 ### 📍 `$`, `#` `sudo` in prompt
@@ -390,8 +397,21 @@ For `desktop.ini` file, `-rwxr-xr-x`
 `sudo` means **super** user **do** //su 超级，do 权限
 > running `echo` in _normal_ user mode 
 > ```
-> 
+> $ echo hello
+> ```
+  
+> ```
+> $ sudo apt-get update
 > ```
 
+> enter super user mode(in this mode, you don't need to add `sudo` anymore) `su` means shift user
 
+> ```
+> $ sudo su
+> # echo "I am in the super user mode"
+> # exit  
+> ```
+
+### 📍 Wildcards matching by `?` and `*`
+### 
 
