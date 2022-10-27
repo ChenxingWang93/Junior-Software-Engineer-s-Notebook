@@ -373,5 +373,25 @@ e.g.
 > -rw-r--r-- 1 Xingxin 197121    282 Jul  1 01:43  desktop.ini
 > ```
 
+### For `Autodesk/` folder, `drwxr-xr-x`
+> `0=d`, this is a directory✔️, file❌
+> `123=rwx`, _owner_ can **read**✔️, **write**✔️ and **execute**✔️.
+> `456=r-x`, _owner group_ can **read**✔️, **write**❌ and **execute**✔️.
+> `789=r-x`, _other users_ can **read**, **write**❌ and **execute**✔️.
+For `desktop.ini` file, `-rwxr-xr-x`
+> `0=-`, this is a directory❌, file✔️
+> `123=rw-`, _owner_ can **read**✔️, **write**✔️ and **execute**❌.
+> `456=r--`, _owner group_ can **read**✔️, **write**❌ and **execute**❌.
+> `789=r--`, other users can **read**✔️, **write**❌ and **execute**❌.
+  
+### 📍 `$`, `#` `sudo` in prompt
+`$` indicates this is a _normal_ user permission to this shell //shell 的普通用户权限
+`#` indicates this is a **super** user permission to this shell //shell 的超级用户权限
+`sudo` means **super** user **do** //su 超级，do 权限
+> running `echo` in _normal_ user mode 
+> ```
+> 
+> ```
+
 
 
