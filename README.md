@@ -329,4 +329,49 @@ All the commands you run in the shell has already been added to the `environment
 > cat <hello.txt >README.txt  
 > ```
 
-### It means stream out whatever inside hello.txt
+### It means stream out whatever inside `hello.txt` and stream in `README.txt`
+> ```
+> cat <hello.txt >>README.txt
+> ```
+
+### it means stream out content of `hello.txt` and append them at the end of `README.txt`
+### 📍 `|`pipe
+### It means take the output from the left as the input of the right <A=output> | <A'=output>
+e.g.
+> ```
+> ls -l | tail -n3
+> ```
+### `ls -l` prints out all the files. This will be treated as the input of `tail` //打印所有文件，当作是`tail`的输入
+### `tail -n3` receives the print by `ls -l` and filter the last 3 lines
+
+
+### 📍 `r`, `w`, `x` file/folder permissions //📃/ 📁权限
+### `r`, read
+> file: read
+> dir: allow? to see files in this dir
+
+### `w`, write
+> file: write
+> dir: allow? to rename/remove files in this dir
+
+### `x`, execute
+> file: execute
+> dir: allow? to enter this dir
+
+### `d`, directory 
+### `-`, nope
+### in the beginning, there are **10 characters**.
+
+### `0`:indicates if this a directory. `d`:directory; `-`:a file
+### `1 to 3`: the permission of **file owner**
+### `4 to 6`: the permission of **the owner group**
+### `7 to 9`: the permission of **other users**
+e.g.
+> ```
+> drwxr-xr-x 1 Xingxin 197121      0 Aug  5 01:15  Autodesk/
+> -rwxr-xr-x 1 Xingxin 197121   2475 Jul 28 20:01 'Unreal Engine.lnk'*
+> -rw-r--r-- 1 Xingxin 197121    282 Jul  1 01:43  desktop.ini
+> ```
+
+
+
