@@ -413,5 +413,60 @@ For `desktop.ini` file, `-rwxr-xr-x`
 > ```
 
 ### 📍 Wildcards matching by `?` and `*`
-### 
+### `?` substitute with 1 character.
+### `*` substitute with **following** characters.
+e.g. Suppose you have `main.py main1.py main2.py main3.py`
+> ```
+> $ ls main?.py
+> main1.py main2.py main3.py #It will substitute anything in `?` position 
+> $ ls ma*
+> main.py main1.py main2.py main3.py #It will match all the characters after *  
+> ```
 
+### 📍 Use `{ }` as a set 
+### 💡(It works very similar to the philosopy of list matching in Grasshopper.) //
+### ⭐ You can see it as the command will iterate what is inside `{ }`
+> ```
+> $ mkdir {dev,src,master} #create 3 folder at 1 time
+> 
+> $ mv *{.py,.sh} folder #will move all *.py and *.sh files
+>  
+> $ convert image.{png,jpg} #This is equal to `convert image.png image.jpg`
+> 
+> $ touch main{1..28}.py #It will create main1.py, main2.py... all the way to main28.py  
+> ```
+  
+
+### 📍 Use `find` to do recursive search //递归搜索🔍
+> 1.Find folders in current dir
+- `.` means current dir
+- `d` means the search target is directory 
+> ```
+> $ find . -name dev -type d  
+> ```
+  
+> 2.Find files in depth!!
+- `**/bin/*.dll` means no matter what is the front, the most important pattern is `**/bin*.dll`
+- `f` means the search target is file 
+> ```
+> $ find . -path '**/bin/*.dll' -type f
+> ```
+
+> 3. Find the files been modified 
+- `-mtime` means modified time 
+- `-1` means last day 
+> ```
+> $ find . -mtime  
+> ```
+
+> 4. Find the files and delete them 
+- `*.tmp` all the temporary files
+- `-exec rm`execute them with remove command 
+> ```
+> $ find . -name "*.tmp" -exec rm {} \;
+> ```
+
+> 5. Find files by sizes
+> ```
+>   
+> ```
