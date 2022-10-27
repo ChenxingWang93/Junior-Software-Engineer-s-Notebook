@@ -329,3 +329,4 @@ All the commands you run in the shell has already been added to the `environment
 > cat <hello.txt >README.txt  
 > ```
 
+### It means stream out whatever inside hello.txt
