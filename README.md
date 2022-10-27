@@ -473,13 +473,22 @@ e.g. Suppose you have `main.py main1.py main2.py main3.py`
 
 ### 📍What is shebang?
 > Different names:
-### It is also called `hashbang, pound-bang, or hash-pling.`
-### Always starts with `#!` at the beginning of a file.
+#### It is also called `hashbang, pound-bang, or hash-pling.`
+#### Always starts with `#!` at the beginning of a file.
 > Objective:
-### Increase the portability of the script. It will make use of the `PATH` environtment and resolve to wherever the command lives in the system.
+#### Increase the portability of the script. It will make use of the `PATH` environtment and resolve to wherever the command lives in the system.
 
 > Example:
-### `#!/usr/bin/env python3`, Execute with a Python interpreter, using the `env` program search path to find it.
+#### `#!/usr/bin/env python3`, Execute with a Python interpreter, using the `env` program search path to find it.
 
 
-### 📍
+### 📍Arguments
+#### As you see the above case, there are other definitions of arguments in bash.
+- `$0` - Name of the script
+- `$1` to `$9` - Arguments to the script. `$1` is the first argument and so on
+- `$@` - All the arguments
+- `$#` - Number of arguments
+- `$?` - Return code of the previous command. Similar to `return 0` in C++
+- `$$` - Process identification number (PID) for the current script
+- `!!` - Entire last command, including arguments. A common pattern is to execute a command only for it to fail due to missing permission; you can quickly re-execute the command with sudo by doing `sudo !!`
+- `$_` - Last argument from the last command. If you are in an interactive shell, you can also quickly get this value by typing `Esc` followed by `.`
