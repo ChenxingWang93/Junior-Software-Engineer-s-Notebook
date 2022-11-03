@@ -17,7 +17,7 @@
 > +- baz.txt (blob, contents = "git is wonderful")
 > ```
 
-## 📍 Modeling history: relating snapshots
+## 📍 Modeling history: relating snapshots //相关
 ### a history is a directed acyclic graph(DAG) of snapshots
 ### each snapshot in Git refers to a set of "parents", the snapshot that preceded it.
 > ```
