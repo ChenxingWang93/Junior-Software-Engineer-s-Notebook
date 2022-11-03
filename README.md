@@ -1,12 +1,12 @@
 # Junior-Software-Engineer-s-Notebook 📖
 ## Git
-### 📍 VCSs, Git, Github/Gitlab
+### 📍 VCSs, Git, Github, Gitlab, Gitee //
 ### VCSs = Version Control System(VCSs)
-### Git = Git is the de facto standard for version control 
-### Github/ Gitlab/ Gitee = the host of Git Repository
+### Git = Git is the de facto standard for version control //版本控制的 de facto 标准
+### Github/ Gitlab/ Gitee = the host of Git Repository //Git 存放处的宿主
 
-## 📍 Snapshots 📷
-### Git models the history of a collection of files and folders within some top-level directory as a series of snapshots📷.
+## 📍 Snapshots //快照📷
+### Git models the history of a collection of files and folders within some top-level directory as a series of snapshots📷. //Git
 > ```
 > <root> (tree)
 > |
