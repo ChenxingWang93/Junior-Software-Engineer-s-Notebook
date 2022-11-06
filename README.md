@@ -519,7 +519,11 @@ e.g. Suppose you have `main.py main1.py main2.py main3.py`
 |`rm -r`  |remove all the files recursively 递归地移除所有文件|
 |`rm -rf *` |remove all the files at the current folder 在现有的文件夹📁中移除所有的文件📃|
 |`rmdir`  |remove EMPTY folder|`rm ./.vscode`|
-|`rg`
+|`rg`     |R.I.P |`rg "import" -t py ~/dev`|
+|`tail`   |print the last _n_ lines 打印最后n行  |tail -n3|
+|`touch`  |create a file 创建一个文件📃 ｜touch main.cpp |
+|`shellcheck`|Debug bash file |`shellcheck mcd.sh`  |
+|
   
 
 
