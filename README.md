@@ -500,4 +500,26 @@ e.g. Suppose you have `main.py main1.py main2.py main3.py`
 > $ sudo !!  #Here means `sudo mkdir /mnt/new`  
 > ```
 
-### Frequently Used Commands /
+### Frequently Used Commands //常用命令
+|Command  命令|Objective  目标|Example  例子|
+|---------|-----------|---------|
+|`cat`    |catch whatever inside  捕捉|`cat hello.txt`|
+|`cd`     |change directory 改变目录|
+|`cp`     |copy a file  复制一个文件|
+|`echo`   |like "echo", it simply prints out its arguments  打印出arguments|
+|`find`   |find <folder> -name <name> -type <type>|`find . -name main -type f`|
+|`fd`     |shortcut for find(not installed yet) find的快捷键|`fd "*py"`|
+|`history`|list the history of your typed bash commands bash 命令历史|
+|`ls`     |list all the files in current directory  罗列当前目录下的所有文件📃|
+|`man`    |manual of something  目录|`man rm` |
+|`mkdir`  |make a directory/folder  创建一个目录/文件📃|
+|`mv`     |rename/move a file 重命名/移动一个文件|`mv xx.md yy.md`|
+|`pwd`    |present working directory 展示工作路径|
+|`rm`     |remove a file  移除文件|
+|`rm -r`  |remove all the files recursively 递归地移除所有文件|
+|`rm -rf *` |remove all the files at the current folder 在现有的文件夹📁中移除所有的文件📃|
+|`rmdir`  |remove EMPTY folder|`rm ./.vscode`|
+|`rg`
+  
+
+
