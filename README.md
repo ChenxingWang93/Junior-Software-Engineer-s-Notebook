@@ -1,4 +1,6 @@
 # Junior-Software-Engineer-s-Notebook 📖
+
+
 ## Git
 ### 📍 VCSs, Git, Github, Gitlab, Gitee //
 ### VCSs = Version Control System(VCSs)
@@ -247,7 +249,7 @@ in short, a Git _repository_: it is the data `objects` and `references`.
   
 
 # Shell 🐚
-> in short, **shell** is a type of user interface. It is either command-line interface (CLI) or **graphical user interface(GUI)** this section will mainly on_(CLI)_ especially on Bourne Again SHell, or "bash" for short.
+> in short, **shell** is a type of user interface. It is either command-line interface (CLI) or **graphical user interface(GUI)** this section will mainly on_(CLI)_ especially on Bourne Again SHell, or "bash" for short. 
 > 
 
 ## 0.Basic Concept //基本概念
@@ -437,7 +439,7 @@ e.g. Suppose you have `main.py main1.py main2.py main3.py`
 > ```
   
 
-### 📍 Use `find` to do recursive search //递归搜索🔍
+### 📍 Use `find` to do recursive search //使用 `find` 做递归搜索🔍
 > 1.Find folders in current dir
 - `.` means current dir
 - `d` means the search target is directory 
@@ -445,42 +447,41 @@ e.g. Suppose you have `main.py main1.py main2.py main3.py`
 > $ find . -name dev -type d  
 > ```
   
-> 2.Find files in depth!!
+> 2.Find files in depth!! //深度寻找📃
 - `**/bin/*.dll` means no matter what is the front, the most important pattern is `**/bin*.dll`
 - `f` means the search target is file 
 > ```
 > $ find . -path '**/bin/*.dll' -type f
 > ```
 
-> 3. Find the files been modified 
+> 3. Find the files been modified //寻找被编辑过的文件📃
 - `-mtime` means modified time 
 - `-1` means last day 
 > ```
 > $ find . -mtime  
 > ```
 
-> 4. Find the files and delete them 
+> 4. Find the files and delete them //寻找文件并删除
 - `*.tmp` all the temporary files
 - `-exec rm`execute them with remove command 
 > ```
 > $ find . -name "*.tmp" -exec rm {} \;
 > ```
 
-> 5. Find files by sizes
+> 5. Find files by sizes //根据文件📃大小寻找
 > ```
 > $ find . -size +500k -size -10M -name '*.tar.gz' # Find all zip files with size in range 500k to 10M
 > ```
 
 ### 📍What is shebang?
-> Different names:
+> Different names: //不同名
 #### It is also called `hashbang, pound-bang, or hash-pling.`
 #### Always starts with `#!` at the beginning of a file.
-> Objective:
-#### Increase the portability of the script. It will make use of the `PATH` environtment and resolve to wherever the command lives in the system.
+> Objective: //目标
+#### Increase the portability of the script. It will make use of the `PATH` environtment and resolve to wherever the command lives in the system. //提升脚本的便携性能，充分利用`PATH`环境 找到系统中存在的 “命令”
 
-> Example:
-#### `#!/usr/bin/env python3`, Execute with a Python interpreter, using the `env` program search path to find it.
-
+> Example: //例子
+#### `#!/usr/bin/env python3`, Execute with a Python interpreter, using the `env` program search path to find it. //执行python
 
 ### 📍Arguments
 #### As you see the above case, there are other definitions of arguments in bash.
