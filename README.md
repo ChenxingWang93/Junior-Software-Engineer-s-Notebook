@@ -481,15 +481,23 @@ e.g. Suppose you have `main.py main1.py main2.py main3.py`
 #### Increase the portability of the script. It will make use of the `PATH` environtment and resolve to wherever the command lives in the system. //提升脚本的便携性能，充分利用`PATH`环境 找到系统中存在的 “命令”
 
 > Example: //例子
-#### `#!/usr/bin/env python3`, Execute with a Python interpreter, using the `env` program search path to find it. //执行python
+#### `#!/usr/bin/env python3`, Execute with a Python interpreter, using the `env` program search path to find it. //执行python 编译器，使用 `env` 程序搜索🔍路径
 
-### 📍Arguments
+### 📍Arguments //
 #### As you see the above case, there are other definitions of arguments in bash.
-- `$0` - Name of the script
-- `$1` to `$9` - Arguments to the script. `$1` is the first argument and so on
-- `$@` - All the arguments
-- `$#` - Number of arguments
-- `$?` - Return code of the previous command. Similar to `return 0` in C++
-- `$$` - Process identification number (PID) for the current script
-- `!!` - Entire last command, including arguments. A common pattern is to execute a command only for it to fail due to missing permission; you can quickly re-execute the command with sudo by doing `sudo !!`
-- `$_` - Last argument from the last command. If you are in an interactive shell, you can also quickly get this value by typing `Esc` followed by `.`
+- `$0` - Name of the script //脚本名
+- `$1` to `$9` - Arguments to the script. `$1` is the first argument and so on  //Arguments 到script 
+- `$@` - All the arguments  //所有arguments
+- `$#` - Number of arguments  //arguments的数量
+- `$?` - Return code of the previous command. Similar to `return 0` in C++  //
+- `$$` - Process identification number (PID) for the current script //当前脚本的 识别码
+- `!!` - Entire last command, including arguments. A common pattern is to execute a command only for it to fail due to missing permission; you can quickly re-execute the command with sudo by doing `sudo !!`  //输入上一个指令，包括arguments
+- `$_` - Last argument from the last command. If you are in an interactive shell, you can also quickly get this value by typing `Esc` followed by `.` //
+  
+### suppose you are at `~`
+> ```
+> $ mkdir /mnt/new  #the prompt will say you don't have permission
+> $ sudo !!  #Here means `sudo mkdir /mnt/new`  
+> ```
+
+  
