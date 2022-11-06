@@ -500,4 +500,4 @@ e.g. Suppose you have `main.py main1.py main2.py main3.py`
 > $ sudo !!  #Here means `sudo mkdir /mnt/new`  
 > ```
 
-### Frequently Used Commands //
+### Frequently Used Commands /
