@@ -523,7 +523,6 @@ e.g. Suppose you have `main.py main1.py main2.py main3.py`
 |`tail`   |print the last _n_ lines 打印最后n行  |tail -n3|
 |`touch`  |create a file 创建一个文件📃 ｜touch main.cpp |
 |`shellcheck`|Debug bash file |`shellcheck mcd.sh`  |
-|
-  
-
-
+|`<command> --help`|see the function of this command 命令|`git --help`
+|`man <command>`|open the menu of this command 打开命令的菜单|`man ls`|
+|Ctrl+L|clean out the shell|
