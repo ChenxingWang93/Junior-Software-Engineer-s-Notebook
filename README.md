@@ -3,12 +3,12 @@
 
 ## Git
 ### 📍 VCSs, Git, Github, Gitlab, Gitee //
-### VCSs = Version Control System(VCSs)
+### VCSs = Version Control System(VCSs) //版本控制系统
 ### Git = Git is the de facto standard for version control //版本控制的 de facto 标准
 ### Github/ Gitlab/ Gitee = the host of Git Repository //Git 存放处的宿主
 
 ## 📍 Snapshots //快照📷
-### Git models the history of a collection of files and folders within some top-level directory as a series of snapshots📷. //Git
+### Git models the history of a collection of files and folders within some top-level directory as a series of snapshots📷. //Git模型，文件📃与📁集合，以顶层目录做为系列快照
 > ```
 > <root> (tree)
 > |
@@ -19,8 +19,8 @@
 > +- baz.txt (blob, contents = "git is wonderful")
 > ```
 
-## 📍 Modeling history: relating snapshots //相关
-### a history is a directed acyclic graph(DAG) of snapshots
+## 📍 Modeling history: relating snapshots //建模历史：相关快照
+### a history is a directed acyclic graph(DAG) of snapshots //
 ### each snapshot in Git refers to a set of "parents", the snapshot that preceded it.
 > ```
 >     this is a commit
