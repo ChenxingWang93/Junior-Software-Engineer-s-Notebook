@@ -8,7 +8,7 @@
 ### Github/ Gitlab/ Gitee = the host of Git Repository //Git 存放处的宿主
 
 ## 📍 Snapshots //快照📷
-### Git models the history of a collection of files and folders within some top-level directory as a series of snapshots📷. //Git模型，文件📃与📁集合，以顶层目录做为系列快照
+### Git models the history of a collection of files and folders within some top-level directory as a series of snapshots📷. //Git模型，以顶层目录做为系列快照文件📃与📁集的历史
 > ```
 > <root> (tree)
 > |
