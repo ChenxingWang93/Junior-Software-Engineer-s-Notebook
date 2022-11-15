@@ -1,4 +1,4 @@
-# Junior-Software-Engineer-s-Notebook 📖
+# Junior-Software-Engineer-s-Notebook 📖  //初级软件开发工程师
 
 
 ## Git
