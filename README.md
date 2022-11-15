@@ -284,9 +284,9 @@ All the commands you run in the shell has already been added to the `environment
 > %USERPROFILE%\AppData\Local\Temp
 > ```
 
-### 📍 `.` , `..` , `~` , `-` used in path
-### It is a must to know these 3 symbols for they appear a lot.
-### `.` means current directory, e.g. `cd ./tutorial` change dir to the tutorial folder which under **current dir**
+### 📍 `.` , `..` , `~` , `-` used in path //在路径中
+### It is a must to know these 3 symbols for they appear a lot. //必须要了解的3个符号，因为他们出现了很多次
+### `.` means current directory, e.g. `cd ./tutorial` change dir to the tutorial folder which under **current dir** //
 ### `..` means the parent directory, e.g. `cd ..` change dir to its parent dir. 
 ### `~` means the home directory. e.g. `ssh-add ~/.ssh/id_rsa` add the ssh key in the "HOME folder/.ssh/"
 ### `-` means the previous directory in the prompt
@@ -348,19 +348,19 @@ e.g.
 
 
 ### 📍 `r`, `w`, `x` file/folder permissions //📃/ 📁权限
-### `r`, read
+### `r`, read 读取
 > file: read
 > dir: allow? to see files in this dir
 
-### `w`, write
+### `w`, write 写入
 > file: write
 > dir: allow? to rename/remove files in this dir
 
-### `x`, execute
+### `x`, execute 执行
 > file: execute
 > dir: allow? to enter this dir
 
-### `d`, directory 
+### `d`, directory 目录
 ### `-`, nope
 ### in the beginning, there are **10 characters**.
 
