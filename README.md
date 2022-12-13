@@ -20,8 +20,8 @@
 > ```
 
 ## 📍 Modeling history: relating snapshots //建模历史：相关快照
-### a history is a directed acyclic graph(DAG) of snapshots //
-### each snapshot in Git refers to a set of "parents", the snapshot that preceded it.
+### a history is a directed acyclic graph(DAG) of snapshots // 
+### each snapshot in Git refers to a set of "parents", the snapshot that preceded it. //Git 中的每一个 快照 
 > ```
 >     this is a commit
 >             ↑
@@ -42,16 +42,16 @@
 >                       bug_fix
 > ```
   
-## 📍 Fast-forward and three-way merge 
+## 📍 Fast-forward and three-way merge // 快进 ⏩ 与 三路 merge 合并
 ### Fast-forward: the commit all points to a same parent commit
 > ```
 > o <-- o <-- o <-- o  
 > ```
 
-### Three-way merge:
-### - master and sub no conflicts ✔️, different file
-### - master and sub no conflicts ✔️, different modification in the same file
-### - master and sub conflicts ❌  
+### Three-way merge:  //三路 merge 合并
+### - master and sub no conflicts ✔️, different file //主、分支 没有冲突，不同文件
+### - master and sub no conflicts ✔️, different modification in the same file //主、分支 没有冲突，在相同文件中有不同修改
+### - master and sub conflicts ❌  //主、分支 冲突
   
 > ```
 > o <-- o <-- o <-- o <---- o
@@ -60,19 +60,19 @@
 >               --- o <-- o
 > ```
 
-## 📍 Data model 
-### The following mimics the data model in Git in pseudocode.
-### **File**: it's a bunch of bytes
+## 📍 Data model //数据模型
+### The following mimics the data model in Git in pseudocode. //下列用 用伪🥸代码 模仿了 Git 中的数据模型 
+### **File**: it's a bunch of bytes //一系列的bytes
 > ```
 > type blob = array<byte>
 > ```
 
-### **Directory**: It contains named files and directories //目录
+### **Directory**: It contains named files and directories //目录：包含名为 文件📃、目录
 > ```
 > type tree = map<string, tree | blob>  
 > ```
 
-### **Commit**: It has parents, metadata, and the top-level tree //
+### **Commit**: It has parents, metadata, and the top-level tree //parents，元数据，与顶层树🌲
 > ```
 > type commit = struct
 > {
@@ -84,12 +84,12 @@
 > ```
   
   
-### **Object**: It could be a blob, tree, or commit. //对象
+### **Object**: It could be a blob, tree, or commit. //对象，树，或者 commit
 > ```
 > type object = blob | tree | commit
 > ```
   
-### **Data Storage**: In Git data store, all objects are content-addressed by their SHA-1 hash.
+### **Data Storage**: In Git data store, all objects are content-addressed by their SHA-1 hash. //数据存储：在Git 数据存储中，所有的对象都是 通过 SHA-1 hash 来做内容寻址 
 > ```
 > objects = map<string, object>
 > 
@@ -101,7 +101,7 @@
 >     return objects[id]
 > ```
   
-### **References**: They are pointers to commits, Convert _SHA-1 hash_ to _human-readable names._
+### **References**: They are pointers to commits, Convert _SHA-1 hash_ to _human-readable names._ //参考 
 > ```
 > references = map<string, string>
 > def update_reference(name, id):
@@ -123,10 +123,10 @@ e.g.
 `master` refers to a particular snapshot instead of a bunch of hexadecimal string.
   
   
-## 📍 Repositories
+## 📍 Repositories  //仓库
 in short, a Git _repository_: it is the data `objects` and `references`.
   
-## 📍 A diagram for Git
+## 📍 A diagram for Git //Git 图解
 
 # Frequently Used Commands //常用命令
 |Command 命令 |Objective 目的 |Example 例子 |
@@ -178,7 +178,7 @@ in short, a Git _repository_: it is the data `objects` and `references`.
 |`git stash`|hid current untracked changes|
 |`git stash pop`|pop out the hidden untracked changes|
 
-# 2. Good 👍 resources of Git
+# 2. Good 👍 resources of Git //Git 资源
 #### `.gitignore` template
 > https://github.com/github/gitignore
 
@@ -186,7 +186,7 @@ in short, a Git _repository_: it is the data `objects` and `references`.
 > `SourceTree` is a free software managing Git while it provides GUI to interact with Git. Highly recommend!
 > https://www.sourcetreeapp.com/
 
-#### Book for Git //Git
+#### Book for Git //Git 书籍
 > https://git-scm.com/book/en/v2
 
 # 3. Some Regular Procedure 一些常规流程
@@ -370,9 +370,9 @@ e.g.
 ### `7 to 9`: the permission of **other users**
 e.g.
 > ```
-> drwxr-xr-x 1 Xingxin 197121      0 Aug  5 01:15  Autodesk/
-> -rwxr-xr-x 1 Xingxin 197121   2475 Jul 28 20:01 'Unreal Engine.lnk'*
-> -rw-r--r-- 1 Xingxin 197121    282 Jul  1 01:43  desktop.ini
+> drwxr-xr-x 1 Chenxing 197121      0 Aug  5 01:15  Autodesk/
+> -rwxr-xr-x 1 Chenxing 197121   2475 Jul 28 20:01 'Unreal Engine.lnk'*
+> -rw-r--r-- 1 Chenxing 197121    282 Jul  1 01:43  desktop.ini
 > ```
 
 ### For `Autodesk/` folder, `drwxr-xr-x`
