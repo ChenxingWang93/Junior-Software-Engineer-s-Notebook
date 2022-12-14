@@ -121,7 +121,7 @@ e.g.
 
 `HEAD` is the latest "where we currently are"
 `master` refers to a particular snapshot instead of a bunch of hexadecimal string.
-  
+ 
   
 ## 📍 Repositories  //仓库
 in short, a Git _repository_: it is the data `objects` and `references`.
