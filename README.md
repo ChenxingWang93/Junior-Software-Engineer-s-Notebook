@@ -526,3 +526,7 @@ e.g. Suppose you have `main.py main1.py main2.py main3.py`
 |`<command> --help`|see the function of this command 命令|`git --help`
 |`man <command>`|open the menu of this command 打开命令的菜单|`man ls`|
 |Ctrl+L|clean out the shell|
+  
+  
+# Acknowledgment 致谢
+shout out to my former colleague XingxinHe [Junior-SofwareEngineer-Notes](https://github.com/XingxinHE/Junior-SofwareEngineer-Notes)
