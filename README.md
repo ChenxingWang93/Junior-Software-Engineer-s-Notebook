@@ -529,4 +529,4 @@ e.g. Suppose you have `main.py main1.py main2.py main3.py`
   
   
 # Acknowledgment 致谢
-shout out to my former colleague XingxinHe [Junior-SofwareEngineer-Notes](https://github.com/XingxinHE/Junior-SofwareEngineer-Notes)
+Shout out to my former colleague XingxinHe [Junior-SofwareEngineer-Notes](https://github.com/XingxinHE/Junior-SofwareEngineer-Notes)
